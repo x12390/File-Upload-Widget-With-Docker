@@ -28,7 +28,7 @@ To implement the widget in your websites use the following code.
 Set a placeholder for rendering.
 
 ````
-<div id="SVB_UPLOAD_WIDGET" class="SVB_UPLOAD_WIDGET">
+<div id="SVB_UPLOAD_WIDGET">
   <!-- js widgets outputs here -->
 </div>
 ````
