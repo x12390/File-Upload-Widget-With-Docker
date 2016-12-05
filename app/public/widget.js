@@ -20,7 +20,7 @@
 
 	
 	var jQuery;
-	var serverFQDN = 'http://provider.dev:9001';
+	var serverFQDN = 'http://rhel01.acme.de';
 	var timeoutId,
 	options,
 	container;

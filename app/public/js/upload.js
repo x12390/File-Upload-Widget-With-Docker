@@ -1,5 +1,5 @@
 jQuery(function () {
-	var serverFQDN = 'http://provider.dev:9001';
+	var serverFQDN = 'http://rhel01.acme.de';
 
 	// Attach the 'fileselect' event to all file inputs on the page
 	jQuery(document).on('change', ':file', function () {

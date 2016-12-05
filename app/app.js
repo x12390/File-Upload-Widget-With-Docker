@@ -33,7 +33,7 @@ app.use(function(req,res,next){
 });
 
 /*Configure the multer.*/
-app.use(multer({ dest: './uploads/',
+app.use(multer({ dest: './app/uploads/',
 
 
  rename: function (fieldname, filename) {
@@ -60,7 +60,7 @@ app.post('/api/file',function(req,res){
   console.log("/api/file called.");
   if(done==true){
     console.log(req.files);
-	execFile('find', [ 'uploads/' ], function(err, stdout, stderr) {
+	execFile('find', [ 'app/uploads/' ], function(err, stdout, stderr) {
 	var file_list = stdout;
 		console.log("File uploaded into dirctory " + file_list);		
 		res.json({success: true, files: file_list});

@@ -14,13 +14,13 @@ services:
       - "traefik.backend=service_1"
       - "traefik.protocol=http"
       - "traefik.frontend.entryPoints=http"
-      - "traefik.frontend.rule=Host:nuc01.dev" 
+      - "traefik.frontend.rule=Host:rhel01.acme.de" 
       
  traefik:
    image: traefik:v1.0.1
-   command: --web --docker --docker.watch --docker.domain=docker.localhost --logLevel=DEBUG --entryPoints="Name:http Address::80"
+   command: --web --docker --docker.watch --docker.domain=docker.localhost --logLevel=DEBUG --entryPoints="Name:http Address::8989"
    ports:
-     - "80:80"
+     - "8989:8989"
      - "8080:8080"
    volumes:
      - /var/run/docker.sock:/var/run/docker.sock
