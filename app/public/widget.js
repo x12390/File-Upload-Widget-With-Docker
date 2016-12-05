@@ -71,7 +71,7 @@
 		
 			jQuery('head').append('<link href="' + serverFQDN + '/css/bootstrap-svb.css" rel="stylesheet" type="text/css">');      
 			//jQuery.getScript(serverFQDN + '/vendor/json2.js');
-			jQuery.getScript(serverFQDN + '/js/upload.js');
+			jQuery.getScript(serverFQDN + '/js/upload_widget.js');
 			
 			if (jQuery(container).size() === 0) {
 				jQuery('#SVB_UPLOAD_WIDGET').append('<div class="widget-body"></div>'); //DIV with widget class
