@@ -5,7 +5,7 @@ JavaScript widget for file uploads. The widget will be provided by a NodeJS-Serv
 Change the server FQDN (e.g. var serverFQDN = 'http://mydomain.dev';) for your server in following files:
 - widget.js
 - upload.js
-- docker-compose.yml ("traefik.frontend.rule=Host:provider.dev")
+- docker-compose.yml ("traefik.frontend.rule=Host:mydomain.dev")
 
 ## Docker
 Copy all files to your Docker server (e.g. /opt/docker/file-upload).
