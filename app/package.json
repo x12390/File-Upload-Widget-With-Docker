@@ -1,0 +1,22 @@
+{
+  "name": "svbfileupload",
+  "version": "1.0.0",
+  "description": "Node.js Fileupload.",
+  "main": "app.js",
+  "dependencies": {
+    "multer": "^0.1.8",
+    "express": "^4.10.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -L app/"
+  },
+  "keywords": [
+    "file",
+    "upload",
+    "svb"
+  ],
+  "author": "Sven Brandt",
+  "license": "MIT"
+}

@@ -1,0 +1,27 @@
+version: '2'
+services:
+ service_1:
+   build:
+     context: .
+     dockerfile: Dockerfile 
+   volumes:
+     - "./app:/src/app"
+     
+   ports:
+     - 9001
+   labels:
+      - "traefik.port=9001"
+      - "traefik.backend=service_1"
+      - "traefik.protocol=http"
+      - "traefik.frontend.entryPoints=http"
+      - "traefik.frontend.rule=Host:nuc01.dev" 
+      
+ traefik:
+   image: traefik:v1.0.1
+   command: --web --docker --docker.watch --docker.domain=docker.localhost --logLevel=DEBUG --entryPoints="Name:http Address::80"
+   ports:
+     - "80:80"
+     - "8080:8080"
+   volumes:
+     - /var/run/docker.sock:/var/run/docker.sock
+     - /dev/null:/traefik.toml

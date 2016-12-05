@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Widget Provider  </title>
+  
+  <!-- Bootstrap -->  
+  <!-- if you remove Bootstrap from this site, the widget will still use his own bootstrap. -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet"> 
+
+</head>
+<body> 
+     <div class="container">    
+          <div class="row">
+            <div class="col-lg-12">
+              <header class="page-header">                
+                  <h3>Widget Provider</h3> 
+              </header>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">           
+               <div class="jumbotron">
+                  <h2>JavaScript Widget</h2>
+                  <div>
+                  <p>This page contains a JavaScript widget that uploads files to this server.</p>
+                  </div>
+               </div>            
+            </div>
+          </div>
+        <div class="row">
+     
+        </div>
+        <div class="row">
+            <div class="col-lg-12"> 
+              <div id="SVB_UPLOAD_WIDGET" class="SVB_UPLOAD_WIDGET"><!-- JS Widgets Outputs here --></div>             
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+              <div>
+                   <p>2016, Developer SVB, MIT License</p>
+              </div>
+           </div>
+        </div>
+    </div>      
+        
+    <!-- jQuery -->
+	<!-- Show case: This is the jQuery library the widget expects. The widget will use it instead of its own. -->	
+    <script src="js/jquery-1.11.0.min.js"></script>
+	
+	<!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- JavaScript Widget Code with configuration setting -->
+    <script src="http://provider.dev:9001/widget.js"></script>
+    <script>
+      SVBFileUpload.Widget({
+        buttonText: 'Upload'
+      });
+    </script> 
+    <!-- /JavaScript Widget Code -->
+</body>
+</html>
