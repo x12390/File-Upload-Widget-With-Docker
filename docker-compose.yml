@@ -14,7 +14,11 @@ services:
       - "traefik.backend=service_1"
       - "traefik.protocol=http"
       - "traefik.frontend.entryPoints=http"
+<<<<<<< HEAD
       - "traefik.frontend.rule=Host:rhel01.acme.de" 
+=======
+      - "traefik.frontend.rule=Host:provider.dev" 
+>>>>>>> origin/master
       
  traefik:
    image: traefik:v1.0.1
