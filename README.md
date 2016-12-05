@@ -14,7 +14,9 @@ Run the command ``docker-compose up`` to create two containers:
 - Container 1: traefik (Http reverse proxy)
 - Container 2: Node.js Server (provides the JavaScript widget for file uploads)
 
-Container 1 listen on port 80 and redirects the requests to container 2.
+Container 1 listen on configured port (usually port 80) and redirects the requests to container 2.
+In this repository traefik listen on port 8989, because I use a virtual machine with linux for demonstration purpose.
+My windows machine listen on port 80 and I redirect the request to port 8989 on the vm.
 
 Container 2 will mount his uploads-directory with the uploads-directory on the host (e.g. /opt/docker/file-upload/app/uploads).
 The Node.js server uses CORS and enables all domains by default. This allows the use of the widget in any website on any domain.
