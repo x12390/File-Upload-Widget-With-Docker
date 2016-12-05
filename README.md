@@ -37,7 +37,7 @@ Set a placeholder for rendering.
 Load the widget from the providing server and configure the text of the upload button.
 
 ````
-<!-- JavaScript widget code with configuration setting -->
+    <!-- JavaScript widget code with configuration setting -->
     <script src="http://mydomain.dev/widget.js"></script>
     <script>
       SVBFileUpload.Widget({
